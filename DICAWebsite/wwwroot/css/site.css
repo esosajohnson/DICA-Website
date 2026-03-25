@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    padding-top: 80px;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -42,4 +43,87 @@ body {
 .hover-lift:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    position: relative;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+}
+
+/* Slight fade on hover */
+.navbar .nav-link:hover {
+    color: #dddddd !important;
+}
+
+.navbar.scrolled {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.facebook-icon {
+    width: 40px;
+    height: 40px;
+    fill: #ffffff;
+    transition: fill 0.3s ease;
+}
+
+.instagram-icon {
+    width: 50px;
+    height: 40px;
+    fill: #ffffff;
+    transition: fill 0.3s ease;
+}
+
+.youtube-icon {
+    width: 50px;
+    height: 40px;
+    fill: #ffffff;
+    transition: fill 0.3s ease;
+}
+
+.tiktok-icon {
+    width: 40px;
+    height: 40px;
+    fill: #ffffff;
+    transition: fill 0.3s ease;
 }
