@@ -31,9 +31,34 @@ body {
   text-align: start;
 }
 
-.hero {
-    height: 90vh;
-    background: url('/images/church.jpg') center/cover no-repeat;
+#welcome {
+    /* background moved to ::before so we can control its opacity without affecting text */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+    overflow: hidden;
+}
+
+/* background image with controlled opacity */
+#welcome::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('/images/church-bg.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.5; /* adjust this value (0.0 - 1.0) to change image opacity */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ensure content sits above the background pseudo-element */
+#welcome > * {
+    position: relative;
+    z-index: 1;
 }
 
 .hover-lift {
@@ -59,6 +84,7 @@ body {
     position: relative;
     margin: 0 10px;
     transition: color 0.3s ease;
+    font-size: 1.1rem;
 }
 
 .nav-link::after {
