@@ -1,0 +1,451 @@
+/* ── GENERAL ── */
+.homePage {
+  font-family: 'Jost', sans-serif;
+  color: #1C1A17;
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  background: #1C1A17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 80px 40px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 40%, rgba(184,151,90,0.18) 0%, transparent 60%),
+              radial-gradient(ellipse at 20% 80%, rgba(184,151,90,0.08) 0%, transparent 50%);
+}
+
+.heroLines {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(184,151,90,0.06) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(184,151,90,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+}
+
+.heroEyebrow {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #B8975A;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.eyebrowLine {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #B8975A;
+  opacity: 0.5;
+}
+
+.heroH1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 7vw, 88px);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.heroH1 em {
+  color: #B8975A;
+  font-style: italic;
+}
+
+.heroSub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.05em;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heroScroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+}
+
+.scrollLine {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, #B8975A, transparent);
+}
+
+/* ── BUTTONS ── */
+.btnPrimary {
+  background: #B8975A;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btnOutline {
+  background: transparent;
+  color: rgba(255,255,255,0.8);
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.btnDark {
+  background: #1C1A17;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* ── WELCOME ── */
+.welcomeOuter {
+  padding: 100px 60px;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #B8975A;
+  margin-bottom: 12px;
+}
+
+.sectionLabelCentered {
+  text-align: center;
+}
+
+.welcomeH2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #1C1A17;
+}
+
+.welcomeP {
+  font-size: 15px;
+  color: #6B6459;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.welcomeVisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomeCross {
+  width: 180px;
+  height: 180px;
+  position: relative;
+}
+
+.ring1 {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(184,151,90,0.2);
+}
+
+.ring2 {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  border: 1px solid rgba(184,151,90,0.12);
+}
+
+.ring3 {
+  position: absolute;
+  inset: -40px;
+  border-radius: 50%;
+  border: 1px solid rgba(184,151,90,0.06);
+}
+
+.crossV {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 60%;
+  background: #B8975A;
+  border-radius: 2px;
+}
+
+.crossH {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  width: 60%;
+  height: 4px;
+  background: #B8975A;
+  border-radius: 2px;
+}
+
+/* ── SERVICES ── */
+.services {
+  background: #1C1A17;
+  padding: 80px 60px;
+}
+
+.servicesInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionTitleLight {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.serviceCard {
+  border: 1px solid rgba(184,151,90,0.2);
+  border-radius: 8px;
+  padding: 40px 32px;
+  text-align: center;
+  background: rgba(184,151,90,0.04);
+}
+
+.serviceIcon {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.serviceDay {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #B8975A;
+  margin-bottom: 6px;
+}
+
+.serviceCardH3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.serviceTime {
+  font-size: 14px;
+  color: rgba(255,255,255,0.45);
+}
+
+/* ── SERMON ── */
+.sermonOuter {
+  padding: 100px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sermonInner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.sermonVideo {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1C1A17;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(184,151,90,0.2);
+}
+
+.sermonH2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 600;
+  color: #1C1A17;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.sermonP {
+  font-size: 14px;
+  color: #6B6459;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+/* ── EVENTS ── */
+.eventsOuter {
+  background: #FAF7F2;
+  padding: 100px 60px;
+}
+
+.eventsInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionTitleDark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: #1C1A17;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+.sectionTitleDarkCentered {
+  text-align: center;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.eventCard {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  border: 1px solid rgba(0,0,0,0.06);
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.eventDate {
+  background: #1C1A17;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+}
+
+.eventMonth {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #B8975A;
+}
+
+.eventDay {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+}
+
+.eventTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1C1A17;
+  margin-bottom: 6px;
+}
+
+.eventDesc {
+  font-size: 13px;
+  color: #6B6459;
+  line-height: 1.6;
+}
+
+.eventTag {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #B8975A;
+  border: 1px solid rgba(184,151,90,0.3);
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+/* ── MAP ── */
+.mapOuter {
+  padding: 80px 60px;
+}
+
+.mapInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 40px;
+  border: 1px solid rgba(184,151,90,0.2);
+}
