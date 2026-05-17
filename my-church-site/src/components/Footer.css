@@ -1,0 +1,141 @@
+.footer {
+    background: #1C1A17;
+    color: #FAF7F2;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+.goldBar {
+    height: 3px;
+    background:
+      linear-gradient(to right, transparent, #B8975A, #D4B07A, #B8975A, transparent),
+}
+
+.footerTop {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1.2fr;
+    gap: 48px;
+    padding: 64px 5% 48px;
+    border-bottom: 1px solid rgba(184,151,90,0.2);
+}
+
+.brandName {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.brandSub {
+    font-size: 10px;
+    color: #B8975A;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.brandDesc {
+    font-size: 13px;
+    color: rgba(250,247,242,0.6);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 320px;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.socialLink {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid rgba(184,151,90,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: rgba(184,151,90,0.06);
+    color: rgba(250,247,242,0.7);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.colHeading {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #B8975A;
+    margin-bottom: 20px;
+}
+
+.colList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.colItem {
+    margin-bottom: 10px;
+}
+
+.colItemService {
+    margin-bottom: 14px;
+}
+
+.colLink {
+    font-size: 13px;
+    color: rgba(250,247,242,0.6);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+}
+
+.serviceName {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(250,247,242,0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.serviceTime {
+    display: block;
+    font-size: 12px;
+    color: rgba(250,247,242,0.45);
+    margin-top: 1px;
+}
+
+.footerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: rgba(250,247,242,0.35);
+    letter-spacing: 0.04em;
+}
+
+.bottomLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.bottomLink {
+    font-size: 12px;
+    color: rgba(250,247,242,0.35);
+    text-decoration: none;
+}

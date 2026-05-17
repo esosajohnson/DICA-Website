@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const socialLinks = [
   {
@@ -55,30 +56,30 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer style={styles.footer}>
+    <footer className="footer">
       {/* Gold top bar */}
-      <div style={styles.goldBar} />
+      <div className="goldBar" />
 
       {/* Main footer content */}
-      <div style={styles.footerTop}>
+      <div className="footerTop">
         {/* Brand column */}
-        <div style={styles.brandCol}>
-          <div style={styles.brandName}>
+        <div className="brandCol">
+          <div className="brandName">
             Destiny International<br />Christian Assembly
           </div>
-          <div style={styles.brandSub}>Birmingham</div>
-          <p style={styles.brandDesc}>
+          <div className="brandSub">Birmingham</div>
+          <p className="brandDesc">
             A welcoming community of believers rooted in faith, love, and the
             Word of God. All are welcome.
           </p>
-          <div style={styles.socialLinks}>
+          <div className="socialLinks">
             {socialLinks.map(({ name, url, icon }) => (
               <a
                 key={name}
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={styles.socialLink}
+                className="socialLink"
                 aria-label={name}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = "#B8975A";
@@ -98,14 +99,14 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div style={styles.col}>
-          <h4 style={styles.colHeading}>Quick Links</h4>
-          <ul style={styles.colList}>
+        <div className="col">
+          <h4 className="colHeading">Quick Links</h4>
+          <ul className="colList">
             {quickLinks.map(({ label, to }) => (
-              <li key={to} style={styles.colItem}>
+              <li key={to} className="colItem">
                 <Link
                   to={to}
-                  style={styles.colLink}
+                  className="colLink"
                   onMouseEnter={(e) => (e.target.style.color = "#B8975A")}
                   onMouseLeave={(e) =>
                     (e.target.style.color = "rgba(250,247,242,0.6)")
@@ -119,36 +120,36 @@ export default function Footer() {
         </div>
 
         {/* Services */}
-        <div style={styles.col}>
-          <h4 style={styles.colHeading}>Services</h4>
-          <ul style={styles.colList}>
+        <div className="col">
+          <h4 className="colHeading">Services</h4>
+          <ul className="colList">
             {services.map(({ name, time }) => (
-              <li key={name} style={{ ...styles.colItem, marginBottom: "14px" }}>
-                <span style={styles.serviceName}>{name}</span>
-                <span style={styles.serviceTime}>{time}</span>
+              <li key={name} className="colItem colItemService">
+                <span className="serviceName">{name}</span>
+                <span className="serviceTime">{time}</span>
               </li>
             ))}
           </ul>
         </div>
 
         {/* Contact */}
-        <div style={styles.col}>
-          <h4 style={styles.colHeading}>Get In Touch</h4>
-          <ul style={styles.colList}>
-            <li style={styles.colItem}>
-              <a href="/contact" style={styles.colLink}>📍 Birmingham, UK</a>
+        <div className="col">
+          <h4 className="colHeading">Get In Touch</h4>
+          <ul className="colList">
+            <li className="colItem">
+              <a href="/contact" className="colLink">📍 Birmingham, UK</a>
             </li>
-            <li style={styles.colItem}>
-              <a href="mailto:info@dicabrum.org" style={styles.colLink}>
+            <li className="colItem">
+              <a href="mailto:info@dicabrum.org" className="colLink">
                 ✉️ info@dicabrum.org
               </a>
             </li>
-            <li style={styles.colItem}>
+            <li className="colItem">
               <a
                 href="https://www.youtube.com/@dicabrum"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={styles.colLink}
+                className="colLink"
               >
                 ▶️ Watch Online
               </a>
@@ -158,141 +159,16 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div style={styles.footerBottom}>
-        <p style={styles.copyright}>
+      <div className="footerBottom">
+        <p className="copyright">
           © {new Date().getFullYear()} Destiny International Christian Assembly.
           All rights reserved.
         </p>
-        <div style={styles.bottomLinks}>
-          <a href="#" style={styles.bottomLink}>Privacy Policy</a>
-          <a href="#" style={styles.bottomLink}>Terms of Use</a>
+        <div className="bottomLinks">
+          <a href="#" className="bottomLink">Privacy Policy</a>
+          <a href="#" className="bottomLink">Terms of Use</a>
         </div>
       </div>
     </footer>
   );
 }
-
-const styles = {
-  footer: {
-    background: "#1C1A17",
-    color: "#FAF7F2",
-    fontFamily: "'Jost', sans-serif",
-    textAlign: "center",
-  },
-  goldBar: {
-    height: "3px",
-    background:
-      "linear-gradient(to right, transparent, #B8975A, #D4B07A, #B8975A, transparent)",
-  },
-  footerTop: {
-    display: "grid",
-    gridTemplateColumns: "1.8fr 1fr 1fr 1.2fr",
-    gap: "48px",
-    padding: "64px 5% 48px",
-    borderBottom: "1px solid rgba(184,151,90,0.2)",
-  },
-  brandCol: {},
-  brandName: {
-    fontFamily: "'Cormorant Garamond', serif",
-    fontSize: "22px",
-    fontWeight: 600,
-    color: "#fff",
-    lineHeight: 1.2,
-    marginBottom: "4px",
-  },
-  brandSub: {
-    fontSize: "10px",
-    color: "#B8975A",
-    letterSpacing: "0.18em",
-    textTransform: "uppercase",
-    marginBottom: "16px",
-  },
-  brandDesc: {
-    fontSize: "13px",
-    color: "rgba(250,247,242,0.6)",
-    lineHeight: 1.7,
-    marginBottom: "24px",
-    maxWidth: "320px",
-    marginLeft : "auto",
-    marginRight : "auto"
-  },
-  socialLinks: {
-    display: "flex",
-    gap: "10px",
-    justifyContent: "center",
-  },
-  socialLink: {
-    width: "36px",
-    height: "36px",
-    borderRadius: "8px",
-    border: "1px solid rgba(184,151,90,0.3)",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    textDecoration: "none",
-    background: "rgba(184,151,90,0.06)",
-    color: "rgba(250,247,242,0.7)",
-    transition: "all 0.2s",
-    cursor: "pointer",
-  },
-  col: {},
-  colHeading: {
-    fontSize: "11px",
-    fontWeight: 500,
-    letterSpacing: "0.15em",
-    textTransform: "uppercase",
-    color: "#B8975A",
-    marginBottom: "20px",
-  },
-  colList: {
-    listStyle: "none",
-    padding: 0,
-    margin: 0,
-  },
-  colItem: {
-    marginBottom: "10px",
-  },
-  colLink: {
-    fontSize: "13px",
-    color: "rgba(250,247,242,0.6)",
-    textDecoration: "none",
-    letterSpacing: "0.02em",
-    transition: "color 0.2s",
-  },
-  serviceName: {
-    display: "block",
-    fontSize: "11px",
-    fontWeight: 500,
-    color: "rgba(250,247,242,0.9)",
-    textTransform: "uppercase",
-    letterSpacing: "0.08em",
-  },
-  serviceTime: {
-    display: "block",
-    fontSize: "12px",
-    color: "rgba(250,247,242,0.45)",
-    marginTop: "1px",
-  },
-  footerBottom: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "20px 60px",
-    flexWrap: "wrap",
-    gap: "12px",
-  },
-  copyright: {
-    fontSize: "12px",
-    color: "rgba(250,247,242,0.35)",
-    letterSpacing: "0.04em",
-  },
-  bottomLinks: {
-    display: "flex",
-    gap: "20px",
-  },
-  bottomLink: {
-    fontSize: "12px",
-    color: "rgba(250,247,242,0.35)",
-    textDecoration: "none",
-  },
-};
