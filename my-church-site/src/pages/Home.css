@@ -148,6 +148,33 @@
   display: inline-block;
 }
 
+.heroSocials {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.heroSocialBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.05);
+  transition: all 0.2s;
+}
+
+.heroSocialBtn:hover {
+  background: #B8975A;
+  border-color: #B8975A;
+  color: #fff;
+}
+
 /* ── WELCOME ── */
 .welcomeOuter {
   padding: 100px 60px;

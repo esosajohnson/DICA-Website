@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import { socials } from "../data/Socials";
 
 export default function Home() {
   return (
@@ -31,6 +32,20 @@ export default function Home() {
             >
               ▶ Watch Online
             </a>
+          </div>
+          <div className="heroSocials">
+            {socials.map(({ name, url, icon }) => (
+              <a
+                key={name}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="heroSocialBtn"
+                title={name}
+              >
+                {icon}
+              </a>
+            ))}
           </div>
         </div>
         <div className="heroScroll">
