@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    height: 72px;
+    height: 94px;
 }
 
   /* LEFT */
@@ -20,6 +20,10 @@
     margin: 0;
     padding: 0;
     justify-self: start;
+}
+
+.nav-logo {
+    height: 62px;
 }
 
 .navLink {

@@ -20,7 +20,7 @@ export default function Navbar() {
 
         {/* LEFT — Logo */}
         <Link to="/" className="brand">
-          <img src="/logo.png" alt="Destiny International Christian Assembly" style={{ height: "52px" }} />
+          <img src="/logo.png" alt="Destiny International Christian Assembly" className="nav-logo" />
         </Link>
 
         {/* RIGHT — Nav links */}
