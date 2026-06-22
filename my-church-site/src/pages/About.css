@@ -1,0 +1,352 @@
+/* ── GENERAL ── */
+.aboutPage {
+  font-family: 'Jost', sans-serif;
+  color: #1C1A17;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #B8975A;
+  margin-bottom: 12px;
+}
+
+.sectionLabelCentered {
+  text-align: center;
+}
+
+.sectionLabelLight {
+  color: #B8975A;
+}
+
+/* ── PAGE HERO ── */
+.pageHero {
+  background: #1C1A17;
+  padding: 100px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pageHeroBg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(184,151,90,0.15) 0%, transparent 70%);
+}
+
+.pageHeroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.pageHeroEyebrow {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #B8975A;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.eyebrowLine {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #B8975A;
+  opacity: 0.5;
+}
+
+.pageHeroH1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.pageHeroH1 em {
+  color: #B8975A;
+  font-style: italic;
+}
+
+/* ── INTRO ── */
+.introSection {
+  padding: 80px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introQuote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 2.5vw, 26px);
+  color: #1C1A17;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.goldDivider {
+  width: 60px;
+  height: 2px;
+  background: #B8975A;
+  margin: 40px auto 0;
+  border-radius: 1px;
+}
+
+/* ── STORY ── */
+.storySection {
+  background: #FAF7F2;
+  padding: 80px 60px;
+}
+
+.storyInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.storyH2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: #1C1A17;
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.storyP {
+  font-size: 15px;
+  color: #6B6459;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.storyVisual {
+  aspect-ratio: 4 / 3;
+  background: #1C1A17;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(184,151,90,0.2);
+  color: rgba(255,255,255,0.2);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── MISSION & VISION ── */
+.missionSection {
+  padding: 80px 60px;
+}
+
+.missionInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.missionH2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: #1C1A17;
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+
+.missionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.missionCard {
+  border: 1px solid rgba(184,151,90,0.2);
+  border-radius: 8px;
+  padding: 40px;
+  background: #FAF7F2;
+}
+
+.missionIcon {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.missionCardH3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1C1A17;
+  margin-bottom: 16px;
+}
+
+.missionCardP {
+  font-size: 14px;
+  color: #6B6459;
+  line-height: 1.8;
+}
+
+/* ── CORE BELIEFS ── */
+.beliefsSection {
+  background: #1C1A17;
+  padding: 80px 60px;
+}
+
+.beliefsInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.beliefsH2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+
+.beliefsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.beliefCard {
+  border: 1px solid rgba(184,151,90,0.2);
+  border-radius: 8px;
+  padding: 32px;
+  background: rgba(184,151,90,0.04);
+}
+
+.beliefNumber {
+  font-size: 11px;
+  color: #B8975A;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.beliefTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.beliefDesc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+}
+
+/* ── LEADERSHIP TEAM ── */
+.teamSection {
+  padding: 80px 60px;
+}
+
+.teamInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.teamH2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: #1C1A17;
+  text-align: center;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+
+.teamSub {
+  text-align: center;
+  color: #6B6459;
+  font-size: 14px;
+  margin-bottom: 48px;
+}
+
+/* Horizontal scroll row */
+.teamScroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar but keep functionality */
+.teamScroll::-webkit-scrollbar {
+  height: 4px;
+}
+.teamScroll::-webkit-scrollbar-track {
+  background: #FAF7F2;
+  border-radius: 2px;
+}
+.teamScroll::-webkit-scrollbar-thumb {
+  background: rgba(184,151,90,0.4);
+  border-radius: 2px;
+}
+
+.teamCard {
+  flex: 0 0 220px;
+  background: #FAF7F2;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.teamCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
+/* Gold border for senior pastors */
+.teamCardSenior {
+  border: 1px solid rgba(184,151,90,0.5);
+  flex: 0 0 240px;
+}
+
+.teamPhoto {
+  aspect-ratio: 1;
+  background: #1C1A17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.2);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.teamInfo {
+  padding: 20px;
+}
+
+.teamName {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1C1A17;
+  margin-bottom: 4px;
+}
+
+.teamRole {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #B8975A;
+}
